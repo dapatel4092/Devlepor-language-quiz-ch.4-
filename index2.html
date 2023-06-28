@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+
+    <!-- start up page before quiz -->
+    <div class="start-pg" id="start-pg">
+        <div class="Startup-Title">
+            <h1>Developer Language Quiz</h1>
+        </div>
+        <div class="quiz-rules">
+            <div class="info">This is a multiple choice timed quiz on languages and developer terms good luck and have
+                fun!</div>
+        </div>
+        <div class="startbtn"><button>Start the Quiz</button></div>
+
+
+
+
+    </div>
+    <!-- quiz page -->
+    <div class="quiz-pg" id="quiz-pg">
+        <div class="quiz-title">
+            <h1>Language Quiz</h1>
+        </div>
+        <h2 id="gameQuestion"></h2>
+        <ul id="options"></ul>
+
+        <div class="timer" id="timer">
+            <div class="time-title">Seconds Left:</div>
+            <span class="timer-seconds" id="timeleft"></span>
+        </div>
+
+
+
+
+    </div>
+<!-- end page -->
+    <div class="end-pg" id="end-pg">
+        <h2> Thank You for Playing!</h2>
+        <p> Your final score:<span id="final-score"></span></p>
+        <form id="highscore-form">
+            <label for="Name">Enter Your Name here:</label>
+            <input type="text" id="name" reuired>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+<!-- leaderboad page -->
+    <div class="highscore-pg" id="highscore-pg">
+        <h2>Leaderboard</h2>
+        <ol id="highscore-list"></ol>
+        <button id="go-back-btn">Go Back</button>
+        <button id="clear-scores-btn">Clear Scores</button>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./script2.js"></script>
+</body>
+
+</html>
